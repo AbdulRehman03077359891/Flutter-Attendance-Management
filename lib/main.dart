@@ -22,7 +22,7 @@ Future<void> markAbsenceForLast15Days() async {
     String userUid = userDoc.id; // Get the user ID
 
     // Loop through the last 15 days
-    for (int i = 1; i < 8; i++) {
+    for (int i = 1; i < 3; i++) {
       DateTime dateToCheck = today.subtract(Duration(days: i));
       String formattedDate = DateFormat('dd-MM-yyyy').format(dateToCheck);
 
